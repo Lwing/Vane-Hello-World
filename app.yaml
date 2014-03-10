@@ -20,9 +20,12 @@ handlers:
   script: hello_world.dart
   controller: GetDatas
 
+- url: /push 
+  script: push.dart
+  controller: Push
+
 # Static content  
 - url: /
   match: postregex
   static_dir: web
-
-
+  

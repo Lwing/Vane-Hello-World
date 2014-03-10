@@ -5,10 +5,20 @@ pub: true
 dart2js: false 
 
 handlers:
-- url: /hello
+- url: /postData
   match: exact 
   script: hello_world.dart
-  controller: HelloWorld
+  controller: PostData
+  
+- url: /getData
+  match: exact 
+  script: hello_world.dart
+  controller: GetData
+
+- url: /getDatas
+  match: exact 
+  script: hello_world.dart
+  controller: GetDatas
 
 # Static content  
 - url: /
